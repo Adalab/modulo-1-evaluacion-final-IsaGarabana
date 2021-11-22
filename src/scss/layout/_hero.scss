@@ -1,0 +1,38 @@
+.hero {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../images/cover.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	// justify-content: space-between;
+	// align-items: center;
+
+	text-align: center;
+
+	&__title {
+		font: $text-style;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $white;
+		line-height: 55px;
+		word-spacing: 100vw;
+		margin-top: 284px;
+	}
+
+	&__text {
+		font: $text-style5;
+		color: $white;
+		margin: 10px 0 0 0;
+	}
+
+	&__button {
+		width: 45px;
+		height: 45px;
+		border: none;
+		border-radius: 50%;
+
+		margin: 45px 0 53px 0;
+	}
+}
