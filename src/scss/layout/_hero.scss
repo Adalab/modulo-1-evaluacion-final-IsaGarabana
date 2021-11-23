@@ -1,17 +1,24 @@
 .hero {
 	width: 100vw;
 	height: 100vh;
+	background-color: chartreuse;
 	background-image: url("../images/cover.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
-	// justify-content: space-between;
-	// align-items: center;
-
+	justify-content: flex-start;
+	align-items: center;
 	text-align: center;
 
+	&__image {
+		height: 100vh;
+		width: 100vw;
+		object-fit: cover;
+	}
+
 	&__title {
+		background-color: aquamarine;
 		font: $text-style;
 		font-weight: bold;
 		text-transform: uppercase;
@@ -22,17 +29,24 @@
 	}
 
 	&__text {
+		background-color: bisque;
 		font: $text-style5;
 		color: $white;
 		margin: 10px 0 0 0;
 	}
 
 	&__button {
-		width: 45px;
-		height: 45px;
-		border: none;
-		border-radius: 50%;
+		margin-bottom: 53px;
+		display: flex;
+		flex-direction: column;
 
-		margin: 45px 0 53px 0;
+		&--item {
+			background-color: brown;
+			width: 45px;
+			height: 45px;
+			border: none;
+			border-radius: 50%;
+			padding-bottom: 45px 0 53px 0;
+		}
 	}
 }

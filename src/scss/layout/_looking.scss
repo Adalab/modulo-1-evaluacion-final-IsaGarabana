@@ -1,0 +1,50 @@
+.looking {
+	padding: 30px 15px 45px 15px;
+
+	&__article {
+		background-color: $white;
+		&--small {
+			font: $text-style4;
+			line-height: 30px;
+			color: $lightblue;
+			text-transform: capitalize;
+		}
+
+		&--title {
+			height: 60px;
+			width: 290px;
+			font: $text-style11;
+			font-weight: bold;
+			color: $black;
+			text-transform: capitalize;
+			line-height: 30px;
+		}
+
+		&--text {
+			height: 120px;
+			width: 290px;
+			font: $text-mobile;
+			color: $greyish-brown;
+			line-height: 30px;
+			text-align: justify;
+			margin: 15px 0 30px 0;
+		}
+
+		&--button {
+			height: 45px;
+			width: 76px;
+			font: $text-style9;
+			color: $bright-orange;
+			border: 2px solid $bright-orange;
+			border-radius: 22.5px;
+			background-color: transparent;
+			transition: all ease 0.5s;
+		}
+
+		&--button:hover {
+			color: $white;
+			background-color: $bright-orange;
+			border-color: $white;
+		}
+	}
+}
