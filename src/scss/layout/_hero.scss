@@ -18,6 +18,10 @@
 		color: $white;
 		line-height: 55px;
 		word-spacing: 100vw;
+
+		@media (min-width: 768px) {
+			font: $text-style8;
+		}
 	}
 
 	&__text {
