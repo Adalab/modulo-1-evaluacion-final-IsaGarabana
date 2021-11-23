@@ -6,13 +6,29 @@
 	justify-content: center;
 	align-items: center;
 
+	@media (min-width: 768px) {
+		padding: 30px 40px 60px;
+	}
+
+	@media (min-width: 1280px) {
+		padding: 60px 85px 60px;
+	}
+
 	&__title {
-		width: 290px;
 		font: $text-style2;
 		font-weight: bold;
 		text-transform: capitalize;
 		line-height: 30px;
 		text-align: center;
+
+		@media (min-width: 768px) {
+			font: $h2-tablet;
+			line-height: 45px;
+		}
+		@media (min-width: 1280px) {
+			font: $h2-desktop;
+			line-height: 45px;
+		}
 	}
 
 	&__container {
@@ -21,23 +37,45 @@
 		grid-template-columns: 180px;
 		grid-template-rows: 93px 93px 93px;
 		gap: 45px;
-	}
 
-	&__container--article1,
-	&__container--article2,
-	&__container--article3 {
-		span: 1;
-		text-align: center;
+		&--article1,
+		&--article2,
+		&--article3 {
+			column-span: 1;
+			text-align: center;
 
-		& .articletitle {
-			font: $text-style7;
-			font-weight: bold;
-			line-height: 30px;
+			& .articletitle {
+				font: $text-style7;
+				font-weight: bold;
+				line-height: 30px;
+			}
+
+			& .articletext {
+				font: $text-style10;
+				line-height: 30px;
+			}
 		}
 
-		& .articletext {
-			font: $text-style10;
-			line-height: 30px;
+		@media (min-width: 768px) {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr;
+			grid-column-gap: 27.7px;
+			margin: 45px 0 60px;
+			& .articletitle {
+				font: $text-style2;
+				line-height: 30px;
+			}
+			& .articletext {
+				margin-top: 14px;
+				font: $text-tablet;
+				line-height: 30px;
+			}
+		}
+
+		@media (min-width: 1280px) {
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-rows: 1fr;
+			grid-column-gap: 27.7px;
 		}
 	}
 
@@ -50,11 +88,31 @@
 		border: none;
 		border-radius: 22.5px;
 		transition: all ease 0.2s;
+
+		@media (min-width: 768px) {
+			width: 210px;
+		}
+
+		@media (min-width: 1280px) {
+			width: 255px;
+		}
 	}
 
 	&__button:hover {
 		width: 210px;
 		border-radius: 30px;
 		font-size: 22px;
+
+		@media (min-width: 768px) {
+			width: 230px;
+			border-radius: 35px;
+			font-size: 24px;
+		}
+
+		@media (min-width: 1280px) {
+			width: 260px;
+			border-radius: 40px;
+			font-size: 24px;
+		}
 	}
 }
