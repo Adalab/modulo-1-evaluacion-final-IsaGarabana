@@ -1,5 +1,5 @@
 .header {
-	position: sticky;
+	position: fixed;
 
 	&__button {
 		width: 44px;
@@ -7,5 +7,6 @@
 		background-color: $cerulean;
 		border: none;
 		position: fixed;
+		cursor: pointer;
 	}
 }
