@@ -1,25 +1,32 @@
-<footer>
-	<button><img src="./assets/images/ico-arrow.svg" /></button>
-	<section>
-		<p>&copy2021</p>
-		<p>We <span class="heart">❤</span> components</p>
+<footer class="footer">
+	<div class="footer__button">
+		<button class="footer__button--item">
+			<a href="./#hero"> <img src="./assets/images/ico-arrow.svg" /></a>
+		</button>
+	</div>
+
+	<section class="footer__items">
+		<div class="footer__items--copy">
+			<p>&copy2021</p>
+			<p>We <span class="heart">❤</span> components</p>
+		</div>
+
+		<nav>
+			<ul>
+				<include src="./footerlinks.html" title="Articles"></include>
+				<include src="./footerlinks.html" title="Books"></include>
+				<include src="./footerlinks.html" title="Events"></include>
+				<include src="./footerlinks.html" title="Reasons"></include>
+				<include src="./footerlinks.html" title="Tips"></include>
+			</ul>
+		</nav>
+
+		<nav>
+			<ul>
+				<include src="./footerlinks.html" title="Twitter"></include>
+				<include src="./footerlinks.html" title="Instagram"></include>
+				<include src="./footerlinks.html" title="Mastodon.social"></include>
+			</ul>
+		</nav>
 	</section>
-
-	<nav>
-		<ul>
-			<include src="./footerlinks.html" title="Articles"></include>
-			<include src="./footerlinks.html" title="Books"></include>
-			<include src="./footerlinks.html" title="Events"></include>
-			<include src="./footerlinks.html" title="Reasons"></include>
-			<include src="./footerlinks.html" title="Tips"></include>
-		</ul>
-	</nav>
-
-	<nav>
-		<ul>
-			<include src="./footerlinks.html" title="Twitter"></include>
-			<include src="./footerlinks.html" title="Instagram"></include>
-			<include src="./footerlinks.html" title="Mastodon.social"></include>
-		</ul>
-	</nav>
 </footer>

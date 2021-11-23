@@ -1,0 +1,60 @@
+.reasons {
+	background-color: $ice-blue;
+	padding: 30px 15px 60px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	&__title {
+		width: 290px;
+		font: $text-style2;
+		font-weight: bold;
+		text-transform: capitalize;
+		line-height: 30px;
+		text-align: center;
+	}
+
+	&__container {
+		margin: 45px 0;
+		display: grid;
+		grid-template-columns: 180px;
+		grid-template-rows: 93px 93px 93px;
+		gap: 45px;
+	}
+
+	&__container--article1,
+	&__container--article2,
+	&__container--article3 {
+		span: 1;
+		text-align: center;
+
+		& .articletitle {
+			font: $text-style7;
+			font-weight: bold;
+			line-height: 30px;
+		}
+
+		& .articletext {
+			font: $text-style10;
+			line-height: 30px;
+		}
+	}
+
+	&__button {
+		height: 45px;
+		width: 184px;
+		background-color: $bright-orange;
+		font: $b1;
+		color: $white;
+		border: none;
+		border-radius: 22.5px;
+		transition: all ease 0.2s;
+	}
+
+	&__button:hover {
+		width: 210px;
+		border-radius: 30px;
+		font-size: 22px;
+	}
+}

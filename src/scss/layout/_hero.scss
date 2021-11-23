@@ -1,52 +1,38 @@
 .hero {
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
-	background-color: chartreuse;
 	background-image: url("../images/cover.jpg");
+	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 	text-align: center;
-
-	&__image {
-		height: 100vh;
-		width: 100vw;
-		object-fit: cover;
-	}
+	padding: 284px 15px 53px;
 
 	&__title {
-		background-color: aquamarine;
 		font: $text-style;
 		font-weight: bold;
 		text-transform: uppercase;
 		color: $white;
 		line-height: 55px;
 		word-spacing: 100vw;
-		margin-top: 284px;
 	}
 
 	&__text {
-		background-color: bisque;
 		font: $text-style5;
 		color: $white;
-		margin: 10px 0 0 0;
+		margin: 0 0 45px 0;
 	}
 
 	&__button {
-		margin-bottom: 53px;
-		display: flex;
-		flex-direction: column;
-
 		&--item {
-			background-color: brown;
 			width: 45px;
 			height: 45px;
 			border: none;
 			border-radius: 50%;
-			padding-bottom: 45px 0 53px 0;
+			padding: 18px 12px 15.3px 13px;
 		}
 	}
 }

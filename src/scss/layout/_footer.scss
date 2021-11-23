@@ -1,0 +1,42 @@
+.footer {
+	background-color: $dark-grey-blue;
+
+	&__button {
+		height: 45px;
+		width: 45px;
+		background-color: transparent;
+
+		&--item {
+			border: none;
+			border-radius: 50%;
+			background-color: $white;
+		}
+	}
+
+	&__items {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		text-decoration: none;
+
+		&--copy {
+			order: 2;
+			font: $footer;
+			color: $white;
+			line-height: 30px;
+
+			& .heart {
+				color: $bright-orange;
+			}
+		}
+
+		& .footerlink {
+			font: $text-style6;
+			color: $white;
+			text-transform: uppercase;
+			line-height: 30px;
+		}
+	}
+}

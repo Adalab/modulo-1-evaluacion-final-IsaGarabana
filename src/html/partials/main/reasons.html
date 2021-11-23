@@ -1,26 +1,29 @@
-<section class="reasons">
-	<h2>3 Reasons to purchase</h2>
+<section class="reasons" id="reasons">
+	<h2 class="reasons__title">3 Reasons to purchase</h2>
 
-	<include
-		src="./reasons/singlereason.html"
-		title="Ud sed metus"
-		text="Lorem ipsum dolor sit amet, consecteur."
-	>
-	</include>
+	<div class="reasons__container">
+		<include
+			class="reasons__container--article1"
+			src="./reasons/singlereason.html"
+			title="Ud sed metus"
+			text="Lorem ipsum dolor sit amet, consecteur."
+		>
+		</include>
+		<include
+			class="reasons__container--article2"
+			src="./reasons/singlereason.html"
+			title="Curabitur ac erat"
+			text="Mauris mattis urna quis lorem molestie."
+		>
+		</include>
+		<include
+			class="reasons__container--article3"
+			src="./reasons/singlereason.html"
+			title="Morbi dictum"
+			text="Aliquam in dolor et dolor tincidunt."
+		>
+		</include>
+	</div>
 
-	<include
-		src="./reasons/singlereason.html"
-		title="Curabitur ac erat"
-		text="Mauris mattis urna quis lorem molestie."
-	>
-	</include>
-
-	<include
-		src="./reasons/singlereason.html"
-		title="Morbi dictum"
-		text="Aliquam in dolor et dolor tincidunt."
-	>
-	</include>
-
-	<button>more reasons</button>
+	<button class="reasons__button">More reasons</button>
 </section>
