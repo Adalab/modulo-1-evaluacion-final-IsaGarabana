@@ -3,17 +3,18 @@
 	background-image: url("../images/cover.jpg");
 	background-size: cover;
 	background-position: center;
+
 	padding: 0 15px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: center;
 
-	@media (min-width: 768px) {
+	@include tablet {
 		padding: 0 39px;
 	}
 
-	@media (min-width: 1280px) {
+	@include desktop {
 		padding: 0 275px;
 	}
 
@@ -27,13 +28,13 @@
 		word-spacing: 100vw;
 		margin-bottom: 10px;
 
-		@media (min-width: 768px) {
+		@include tablet {
 			font: $text-style8;
 			line-height: 106px;
 			margin-bottom: 20px;
 		}
 
-		@media (min-width: 1280px) {
+		@include desktop {
 			font: $h1-desktop;
 			line-height: 132px;
 			margin-bottom: 0;
@@ -45,7 +46,7 @@
 		line-height: 21px;
 		margin-bottom: 45px;
 
-		@media (min-width: 768px) {
+		@include tablet {
 			font: $main-text-tablet;
 			margin-bottom: 30px;
 		}
@@ -60,11 +61,11 @@
 		padding: 18px 12px 15.3px 13px;
 		margin-bottom: 53px;
 
-		@media (min-width: 768px) {
+		@include tablet {
 			margin-bottom: 45px;
 		}
 
-		@media (min-width: 1280px) {
+		@include desktop {
 			margin-bottom: 13px;
 		}
 	}
