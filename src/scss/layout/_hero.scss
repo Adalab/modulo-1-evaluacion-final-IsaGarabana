@@ -1,42 +1,71 @@
 .hero {
-	width: 100%;
 	height: 100vh;
 	background-image: url("../images/cover.jpg");
 	background-size: cover;
 	background-position: center;
+	padding: 0 15px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: flex-end;
 	align-items: center;
-	text-align: center;
-	padding: 284px 15px 53px;
 
-	&__title {
+	@media (min-width: 768px) {
+		padding: 0 39px;
+	}
+
+	@media (min-width: 1280px) {
+		padding: 0 275px;
+	}
+
+	& .herotitle {
 		font: $text-style;
 		font-weight: bold;
 		text-transform: uppercase;
 		color: $white;
 		line-height: 55px;
+		text-align: center;
 		word-spacing: 100vw;
+		margin-bottom: 10px;
 
 		@media (min-width: 768px) {
 			font: $text-style8;
+			line-height: 106px;
+			margin-bottom: 20px;
+		}
+
+		@media (min-width: 1280px) {
+			font: $h1-desktop;
+			line-height: 132px;
+			margin-bottom: 0;
+		}
+	}
+	& .herotext {
+		font: $text-style5;
+		color: $white;
+		line-height: 21px;
+		margin-bottom: 45px;
+
+		@media (min-width: 768px) {
+			font: $main-text-tablet;
+			margin-bottom: 30px;
 		}
 	}
 
-	&__text {
-		font: $text-style5;
-		color: $white;
-		margin: 0 0 45px 0;
-	}
+	& .herobutton {
+		background-color: white;
+		width: 45px;
+		height: 45px;
+		border: none;
+		border-radius: 50%;
+		padding: 18px 12px 15.3px 13px;
+		margin-bottom: 53px;
 
-	&__button {
-		&--item {
-			width: 45px;
-			height: 45px;
-			border: none;
-			border-radius: 50%;
-			padding: 18px 12px 15.3px 13px;
+		@media (min-width: 768px) {
+			margin-bottom: 45px;
+		}
+
+		@media (min-width: 1280px) {
+			margin-bottom: 13px;
 		}
 	}
 }
