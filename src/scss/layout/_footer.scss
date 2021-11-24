@@ -17,13 +17,28 @@
 		height: 45px;
 		width: 100%;
 		text-align: center;
-		background-color: transparent;
 
 		&--item {
 			border: none;
 			border-radius: 50%;
 			background-color: $white;
 			transform: translateY(-50%);
+			animation-duration: 1s;
+			animation-name: flash;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes flash {
+			from {
+				width: 45px;
+				border-radius: 50%;
+			}
+
+			to {
+				width: 70px;
+				border-radius: 40%;
+				border: 3px solid $bright-orange;
+			}
 		}
 	}
 
@@ -80,8 +95,6 @@
 		}
 
 		@media (min-width: 1280px) {
-			justify-content: space-between;
-			align-items: flex-start;
 			max-width: 730px;
 
 			&--menu1,
