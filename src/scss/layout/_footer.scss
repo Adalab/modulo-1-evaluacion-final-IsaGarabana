@@ -1,5 +1,5 @@
 .footer {
-	background-color: $dark-grey-blue;
+	background-color: $cerulean;
 	padding: 0 15px 45px;
 
 	@include tablet {
@@ -44,28 +44,34 @@
 
 		&--menu1 {
 			width: 147px;
-			margin: 15px 0 30px 0;
+			margin: 0 0 45px 0;
 		}
 
 		&--menu2 {
-			margin: 0 0 30px 0;
+			margin: 0 0 45px 0;
 		}
 
 		&--copy {
 			order: 2;
 			font: $footer;
-			color: $white;
+			color: $black;
 			line-height: 30px;
 			text-transform: lowercase;
 
 			& .heart {
 				color: $bright-orange;
 			}
+
+			& .components {
+				@include tablet {
+					color: $bright-orange;
+				}
+			}
 		}
 
 		& .footerlink {
 			font: $text-style6;
-			color: $white;
+			color: $black;
 			text-transform: uppercase;
 			line-height: 30px;
 		}
@@ -81,9 +87,6 @@
 			&--copy {
 				width: 210px;
 				margin: 0;
-			}
-			&--copy {
-				order: 0;
 			}
 		}
 
