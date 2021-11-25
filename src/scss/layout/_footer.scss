@@ -23,15 +23,9 @@
 			border-radius: 50%;
 			background-color: $white;
 			transform: translateY(-50%);
-			animation-duration: 1s;
+			animation-duration: 2s;
 			animation-name: flash;
 			animation-iteration-count: infinite;
-
-			& .arrow {
-				animation-duration: 1s;
-				animation-name: spin;
-				animation-iteration-count: infinite;
-			}
 		}
 	}
 
@@ -52,6 +46,7 @@
 		}
 
 		&--copy {
+			display: inline-block;
 			order: 2;
 			font: $footer;
 			color: $white;
@@ -60,6 +55,9 @@
 
 			& .heart {
 				color: $bright-orange;
+				animation-name: boom;
+				animation-iteration-count: infinite;
+				animation-duration: 1s;
 			}
 		}
 

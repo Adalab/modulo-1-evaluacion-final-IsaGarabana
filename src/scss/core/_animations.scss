@@ -1,22 +1,27 @@
-@keyframes spin {
-	0% {
-		transform: rotate(0);
+@keyframes boom {
+	from {
+		font-size: 12px;
 	}
 
-	100% {
-		transform: rotate(360deg);
+	to {
+		font-size: 15px;
 	}
 }
 
 @keyframes flash {
-	from {
-		width: 45px;
-		border-radius: 50%;
+	0% {
+		transform: translateY(-5px);
 	}
 
-	to {
-		width: 70px;
-		border-radius: 40%;
-		border: 3px solid $bright-orange;
+	25% {
+		transform: translateY(-15px) rotate(-15deg);
+	}
+
+	50% {
+		transform: translateY(-15px) rotate(15deg);
+	}
+
+	100% {
+		transform: translateY(-5px);
 	}
 }
