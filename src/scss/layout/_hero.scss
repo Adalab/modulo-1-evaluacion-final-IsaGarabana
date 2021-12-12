@@ -21,13 +21,14 @@
 	& .herotitle {
 		font: $text-style;
 		font-weight: bold;
-		text-transform: uppercase;
 		color: $white;
 		line-height: 55px;
 		text-align: center;
 		word-spacing: 100vw;
 		margin-bottom: 10px;
-
+		& .span {
+			text-transform: lowercase;
+		}
 		@include tablet {
 			font: $text-style8;
 			line-height: 106px;
