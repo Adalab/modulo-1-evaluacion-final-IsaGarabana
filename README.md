@@ -1,4 +1,4 @@
-# Final evaluation
+# Final evaluation JS Module
 
 This is the exercise I solved to evaluate the coding skills acquired during the 1st module of the _curso intensivo de Adalab-Promo Olguin_
 
